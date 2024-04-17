@@ -7,6 +7,7 @@ import {
   UserRoundCog,
   Squircle,
   Plus,
+  LineChart,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card";
@@ -19,8 +20,10 @@ export default function HomePage() {
         <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
           <CardTitle className="text-sm font-medium">회원 정보</CardTitle>
           <Button className="rounded-full" size="icon" variant="outline">
-            <UserRoundCog className="w-4 h-4" />
-            <span className="sr-only">편집</span>
+            <Link href="/profile">
+              <UserRoundCog className="w-4 h-4" />
+              <span className="sr-only">편집</span>
+            </Link>
           </Button>
         </CardHeader>
         <CardContent className="grid gap-4 text-sm">
@@ -74,6 +77,9 @@ export default function HomePage() {
       <nav className="w-full p-4 border-r flex justify-between bottom-0 sticky bg-white">
         <Link className="flex items-center gap-2 text-sm font-medium" href="#">
           <Home className="w-8 h-8" />
+        </Link>
+        <Link className="flex items-center gap-2 text-sm font-medium" href="#">
+          <LineChart className="w-8 h-8" />
         </Link>
         <Link className="flex items-center gap-2 text-sm font-medium" href="#">
           <Bluetooth className="w-8 h-8" />
