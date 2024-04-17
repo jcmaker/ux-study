@@ -73,13 +73,13 @@ export default function HomePage() {
       </Card>
       <nav className="w-full p-4 border-r flex justify-between bottom-0 sticky bg-white">
         <Link className="flex items-center gap-2 text-sm font-medium" href="#">
-          <Home className="w-4 h-4" />
+          <Home className="w-8 h-8" />
         </Link>
         <Link className="flex items-center gap-2 text-sm font-medium" href="#">
-          <Bluetooth className="w-4 h-4" />
+          <Bluetooth className="w-8 h-8" />
         </Link>
         <Link className="flex items-center gap-2 text-sm font-medium" href="#">
-          <Settings className="w-4 h-4" />
+          <Settings className="w-8 h-8" />
         </Link>
       </nav>
     </main>
